@@ -30,7 +30,7 @@ This project works as a dependency as well as a stand-alone project.
 
 - Node version 12.18
 - RSKj Running Node. 
-  - **Note: RSKj must run with `miner.minGasPrice=1` (or higher than 0) in regtest to work properly with this server.**
+  - **Note: To work properly with this server in Regtest, please use the RSKj configuration that can be found [here](https://github.com/rsksmart/rif-relay/blob/master/rsknode/node.conf).**
 - [RIF Relay Contracts](https://github.com/anarancio/rif-relay-contracts) deployed
 
 ### Dependencies
@@ -208,6 +208,10 @@ to check and fix the errors before trying to commit again:
 * `npm run lint:fix`: to fix linter bugs
 * `npm run prettier`: to check codestyles errors
 * `npm run prettier:fix`: to fix codestyles errors
+
+## ts-node
+In order to run the server without having to rebuild every time a change is made, use the following command:
+* `npm run debug`: run the server with ts-node
 
 ### Generating a new distributable version
 
